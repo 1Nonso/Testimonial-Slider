@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(assets/Inter-VariableFont_opsz\wght.ttf);
+}
+
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border: 1px solid;
+  height: 35rem;
+}
+
+.profilePicture {
+  width: 17rem;
+  height: 17rem;
+  padding: 1rem;
+}
