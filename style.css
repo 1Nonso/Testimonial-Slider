@@ -17,19 +17,142 @@ body {
   display: flex;
   align-items: center;
   height: 100dvh;
+  font-family: inter;
+  background-image: url(assets/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 6rem;
+  background-position: bottom;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   margin: 1rem;
-  border: 1px solid;
-  height: 35rem;
+  height: 40rem;
 }
 
 .profilePicture {
   width: 17rem;
   height: 17rem;
-  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 25px 30px -20px;
+}
+
+.pictureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 20.5rem;
+}
+
+section {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: 50% -1rem;
+}
+
+.comment {
+  line-height: 1.7rem;
+}
+
+.name {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.imageContainer,
+.imageContainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.imageContainer:hover {
+  background-color: var(--Grayish-Blue);
+  border: none;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.imageContainer2:hover {
+  background-color: var(--Grayish-Blue);
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    width: 70rem;
+    background-color: red;
+  }
+
+  section{
+    width: 33rem;
+    text-align: left;
+    font-size: 1.5rem;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .pictureContainer{
+    width: 40rem;
+    height: 100%;
+    background-color: blue;
+  }
+
+  .profilePicture{
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .comment{
+    line-height: 2rem;
+  }
+
+  .name{
+    flex-direction: row;
+    p{
+      margin-right: 0.6rem;
+    }
+    .profession{
+      opacity: 0.7;
+    }
+  }
+
 }
