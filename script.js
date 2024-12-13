@@ -23,7 +23,11 @@ const text = document.querySelector(".comment");
 // });
 
 const changeComment = [
-  { comment: 'heyy', userName: 'John Tarkpor', profession: 'Junior Front-end Developer' },
+  {
+    comment: "heyy",
+    userName: "John Tarkpor",
+    profession: "Junior Front-end Developer",
+  },
 ];
 
 button.addEventListener("click", () => {

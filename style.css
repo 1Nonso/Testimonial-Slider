@@ -112,47 +112,56 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
-  body{
+  body {
     justify-content: center;
+    background-position: 0 100%;
+    background-size: 40%;
   }
 
   main {
     flex-direction: row-reverse;
-    width: 70rem;
-    background-color: red;
+    width: 62rem;
+    margin: 0;
   }
 
-  section{
-    width: 33rem;
+  section {
+    width: 40rem;
     text-align: left;
     font-size: 1.5rem;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    right: -7.5rem;
+    background-position: 15% -1rem;
   }
 
-  .pictureContainer{
+  .pictureContainer {
     width: 40rem;
     height: 100%;
-    background-color: blue;
+    position: relative;
+    right: 0.1rem;
   }
 
-  .profilePicture{
-    width: 40rem;
-    height: 30rem;
+  .profilePicture {
+    width: 23.5rem;
+    height: 24.5rem;
   }
 
-  .comment{
+  button {
+    left: 6rem;
+    bottom: 6.5rem;
+  }
+
+  .comment {
     line-height: 2rem;
   }
 
-  .name{
+  .name {
     flex-direction: row;
-    p{
+    p {
       margin-right: 0.6rem;
     }
-    .profession{
+    .profession {
       opacity: 0.7;
     }
   }
-
 }
