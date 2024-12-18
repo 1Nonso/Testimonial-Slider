@@ -10,14 +10,14 @@ const profiles = [
   {
     image: "assets/images/image-tanya.jpg",
     message:
-      "“I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.”",
+      " “I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.” ",
     name: "Tanya Sinclair",
     profession: "UX Engineer",
   },
   {
     image: "assets/images/image-john.jpg",
     message:
-      "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.”",
+      " “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.” ",
     name: "John Tarkpor",
     profession: "Front-end Developer",
   },
