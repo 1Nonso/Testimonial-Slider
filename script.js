@@ -33,20 +33,14 @@ button.addEventListener("click", () => {
   image.src = currentProfile.image;
   text.textContent = currentProfile.message;
 
-  // devName.textContent = currentProfile.name;
-  // Create temporary div elements
   const nameElement = document.createElement("strong");
   nameElement.textContent = currentProfile.name;
-  devName.innerHTML = ""; // Clear existing content
+  devName.innerHTML = "";
   devName.appendChild(nameElement);
 
   const profElement = document.createElement("span");
   profElement.style.opacity = "0.5";
   profElement.textContent = currentProfile.profession;
-  profession.innerHTML = ""; // Clear existing content
+  profession.innerHTML = "";
   profession.appendChild(profElement);
-
-  // profession.textContent = currentProfile.profession;
 });
-
-// For profession with opacity
